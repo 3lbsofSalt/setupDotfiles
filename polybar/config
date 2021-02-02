@@ -1,0 +1,123 @@
+[bar/default]
+monitor = ${env:MONITOR:}
+
+bottom = false
+
+width = 100%
+height = 27 
+radius = 0
+
+font-0 = "Source Code Pro Semibold:size=10;1"
+font-1 = "hicolor"
+
+line-size = 3
+line-color =
+
+border-size = 0
+border-color =
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+;tray-position =
+;tray-padding =
+;wm-restack = i3
+;override-redirect = true
+
+sursor-click = pointer
+cursor-scroll = ns-resize
+
+modules-left = i3
+modules-right = battery date
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+label-mode-padding = 2
+label-mode-foreground = #657b83
+label-mode-background = #272827
+
+label-focused = %index%
+label-focused-background = #4E524F
+label-focused-foreground = #272827
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-background = #7E807E
+label-unfocused-foreground = #272827
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-background = #7E807E
+label-visible-foreground = #272827
+label-visible-padding = 2
+
+label-urgent = %index%
+label-urgent-background = #BA2922
+label-urgent-padding = 2
+
+pin-workspaces = true
+
+[module/alsa]
+type = internal/alsa
+
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+
+master-mixer = Master
+
+interval = 5
+
+format = <label>
+
+label = %percentage%
+
+format-foreground = #272827
+format-background = #7E807E
+format-padding = 2
+
+[module/battery]
+type = internal/battery
+
+battery = BAT0
+adapter = ADP1
+
+poll-interval = 10
+
+label-discharging = %{B#7E807E}%{F#272827} BAT-: %percentage%% 
+label-charging = %{B#7E807E}%{F#272827} BAT+: %percentage%% 
+label-full = %{B#7E807E}%{F#272827} BAT: FULL 
+
+format-charging-padding = 1
+format-discharging-padding = 1
+format-full-padding = 1
+
+[module/date]
+type = internal/date
+
+interval = 1.0
+
+date = %Y-%m-%d%
+time = %H:%M
+
+format = <label>
+
+label = %date% %time%
+
+format-foreground = #272827
+format-background = #7E807E
+format-padding = 2
+
+[colors]
+background = #162025
+foreground = #bfbfbf
+
