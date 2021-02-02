@@ -26,6 +26,6 @@ cd polybar
 makepkg -si --needed --noconfirm
 cd ../..
 
-ln -sf $cur_dir/i3 ~/.config/i3
-ln -sf $cur_dir/polybar ~/.config/polybar
+ln -sf $cur_dir/i3 ~/.config/
+ln -sf $cur_dir/polybar ~/.config/
 
