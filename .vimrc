@@ -9,7 +9,6 @@ set expandtab
 
 " nothing like some not so smart indents
 set autoindent
-set smartindent
 
 "the most important line of my vimrc
 set number
@@ -49,4 +48,6 @@ call vundle#begin()
     Plugin 'frazrepo/vim-rainbow'
     "Plugin '2072/PHP-Indenting-for-VIm'
     Plugin 'captbaritone/better-indent-support-for-php-with-html'
+    Plugin 'posva/vim-vue'
+
 call vundle#end()

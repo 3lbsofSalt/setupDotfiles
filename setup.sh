@@ -17,6 +17,7 @@ ln -sf $cur_dir/.fehbg ~/.fehbg
 #Set up i3 and polybar
 mkdir -p ~/.config
 sudo pacman -S --needed --noconfirm i3-wm i3-gaps
+sudo pacman -S --needed --noconfirm alacritty
 sudo pacman -S --needed --noconfirm git
 
 mkdir -p aur
