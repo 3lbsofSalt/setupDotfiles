@@ -29,4 +29,5 @@ cd ../..
 
 ln -sf $cur_dir/i3 ~/.config/
 ln -sf $cur_dir/polybar ~/.config/
+ln -sf $cur_dir/alacritty ~/.config/
 
