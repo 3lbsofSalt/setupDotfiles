@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/madram/photos/wallpapers/hipsterPineNeedles.jpg' 
+feh --no-fehbg --bg-fill '/home/madram/programs/shell/archSetup/backgrounds/goatGlacier'

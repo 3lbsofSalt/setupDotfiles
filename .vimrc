@@ -13,6 +13,14 @@ set autoindent
 "the most important line of my vimrc
 set number
 
+" Autoread file changes
+set autoread
+
+" File finding
+set path+=.,**
+set wildmenu
+set wildmode=list:full
+set wildignore=*/node_modules/*,.git/**
 
 """""
 "Plug stuff
@@ -23,6 +31,7 @@ set laststatus=2
 
 " Get rid of the --Insert-- bar because we have lightline instead
 set noshowmode
+
 
 call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'
@@ -43,11 +52,9 @@ colors deus
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+    Plugin 'tpope/vim-surround'
     Plugin 'VundleVim/Vundle.vim'
-    Plugin 'jiangmiao/auto-pairs'
-    Plugin 'frazrepo/vim-rainbow'
-    "Plugin '2072/PHP-Indenting-for-VIm'
     Plugin 'captbaritone/better-indent-support-for-php-with-html'
-    Plugin 'posva/vim-vue'
+    Plugin 'leafOfTree/vim-vue-plugin'
 
 call vundle#end()

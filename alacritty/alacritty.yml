@@ -1,3 +1,12 @@
+font:
+  normal:
+    family: Misc Tamsyn
+    style: Regular
+  bold:
+    family: Misc Tamsyn
+    style: Bold
+  size: 15 
+
 window:
   padding:
     x: 5
