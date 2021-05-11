@@ -22,6 +22,30 @@ set wildmenu
 set wildmode=list:full
 set wildignore=*/node_modules/*,.git/**
 
+" Colemak keybindings
+noremap n j
+noremap e k
+noremap i l
+
+noremap I L
+noremap N J
+noremap E K
+
+noremap l i
+noremap k e
+noremap j n
+
+noremap L I
+noremap K E
+noremap J N
+
+noremap <C-W>n <C-W>j
+noremap <C-W>N <C-W>J
+noremap <C-W>e <C-W>k
+noremap <C-W>E <C-W>K
+noremap <C-W>i <C-W>l
+noremap <C-W>I <C-W>L
+
 """""
 "Plug stuff
 
