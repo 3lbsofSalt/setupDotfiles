@@ -58,6 +58,8 @@ call vundle#begin()
     Plugin 'dense-analysis/ale'
     Plugin 'ajmwagar/vim-deus'
     Plugin 'junegunn/fzf.vim'
+    Plugin 'sonph/onehalf'
+    Plugin 'neoclide/coc.nvim'
 
 call vundle#end()
 
@@ -65,7 +67,7 @@ call vundle#end()
 
 " Colorscheme Stuff
 
-colors deus 
+colors deus
 
 " Makes lightline work
 set laststatus=2
