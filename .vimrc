@@ -43,7 +43,6 @@ noremap <C-W>E <C-W>K
 noremap <C-W>i <C-W>l
 noremap <C-W>I <C-W>L
 
-
 """""
 "Vundle Stuff
 
@@ -59,11 +58,9 @@ call vundle#begin()
     Plugin 'ajmwagar/vim-deus'
     Plugin 'junegunn/fzf.vim'
     Plugin 'sonph/onehalf'
-    Plugin 'neoclide/coc.nvim'
+    Plugin 'MaxMEllon/vim-jsx-pretty'
 
 call vundle#end()
-
-
 
 " Colorscheme Stuff
 
